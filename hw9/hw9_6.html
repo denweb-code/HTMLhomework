@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home work9_6</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1728px;
+            height: 100vh;
+            max-height: 1117px;
+            background: #FFFFFF;
+            display: grid;
+            grid-template-rows: 21.84% 56.31% 21.84%;
+            grid-template-columns: 26.85% 46.30% 26.85%;
+            margin: 0 auto;
+        }
+
+        .header {
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+            background: #D9D9D9;
+        }
+
+        .left-sidebar {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            background: #C0BDBD;
+        }
+
+        .center-top {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            background: #827878;
+            height: 46.42%;
+        }
+
+        .center-bottom {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            background: #B7ADAD;
+            height: 53.58%;
+            align-self: end;
+        }
+
+        .right-sidebar {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+            background: #C0BDBD;
+        }
+
+        .footer {
+            grid-column: 1 / 4;
+            grid-row: 3 / 4;
+            background: #D9D9D9;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-rows: 20% 60% 20%;
+                grid-template-columns: 100%;
+            }
+
+            .header {
+                grid-column: 1 / 2;
+            }
+
+            .left-sidebar {
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+                display: none;
+            }
+
+            .center-top {
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+                height: 46.42%;
+            }
+
+            .center-bottom {
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+                height: 53.58%;
+            }
+
+            .right-sidebar {
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+                display: none;
+            }
+
+            .footer {
+                grid-column: 1 / 2;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header"></div>
+    <div class="left-sidebar"></div>
+    <div class="center-top"></div>
+    <div class="center-bottom"></div>
+    <div class="right-sidebar"></div>
+    <div class="footer"></div>
+</div>
+</body>
+</html>
